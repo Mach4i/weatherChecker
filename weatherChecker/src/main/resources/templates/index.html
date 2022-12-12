@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Checker</title>
+    </head>
+    <body>
+        <div>
+            <form>
+                <label for="lat">Latitude:</label><input type="text" name="lat" id="lat"/> <!--Latitude input-->
+                <label for="lon">Longitude:</label><input type="text" name="lon" id="lon"/> <!--Longitude input-->
+                <button type="submit" id="searchSubmit">How's the weather?</button> <!--submit button-->
+            </form>
+            <div id="results">
+                <p>Location: <span id="location"></span></p>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Temperature: <span id="temp"></span></p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="\js\weather.js"></script>
+    </body>
+</html>
